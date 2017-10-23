@@ -1,3 +1,11 @@
 body {
 	background: #EFF2F0; 
 }
+
+main > section {
+	display: none;
+}
+
+main > section:first-child {
+	display: block;
+}
