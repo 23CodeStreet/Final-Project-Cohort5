@@ -1,0 +1,49 @@
+.icon {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    
+}
+
+.circle {
+    background: transparent;
+    margin: 60px auto 40px;
+    position: relative;
+    height: 30px;
+    widows: 50px;
+}
+
+.circle:before,
+.circle:after {
+  background: #120707;
+  backface-visibility: hidden;
+  content: "";
+  height: 2px;
+  left: 0;
+  transition: 0.75s;
+  width: 50px;
+}
+
+.circle:before {
+    box-shadow: #fff 0 14px 0 0;
+    position: absolute;
+    top: 0;
+  }
+
+.circle:after {
+    position: absolute;
+    top: calc(100% - 2px);
+  }
+
+  .circle:hover, .circle:before {
+    box-shadow: transparent 0 0 0 0;
+    top: 50%;
+    transform: rotate(225deg)
+     
+  }
+  .circle:hover, .circle:after {
+    top: 50%;
+    transform: rotate(315deg);
+     
+  }
