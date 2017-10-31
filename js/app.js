@@ -1,11 +1,18 @@
-$(document).ready(function(){
-  $(".js-activator").on ("click", function(){
-    $("main > section").hide();
+// Wait till document is finished loading.
+$(document).ready(function() {
+    // Attach a click event to the buttons.
+    $(".js-activator").on("click", function(){
 
+        // Hide all sections in main
+        $("main > section").hide();
 
-    var index = $(this).attr("data-section")
-    $("." +index).show();  
+        // Use the attribute  "data-section" to get the related section.
+        var index = $(this).attr("data-section");
 
-    console.log(index)
- })
+        // Construct the class name.
+        var section = "." + index;
+
+        // Show related section.
+        $(section).show();
+    })
 });
