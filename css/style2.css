@@ -1,0 +1,62 @@
+body {
+	background: #FFF;
+	font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Karla', sans-serif;
+	color: #022b3a;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.8em;
+}
+h3 {
+	font-size: 1.6em;
+}
+h4 {
+	font-size: 1.4em;
+}
+h5 {
+	font-size: 1.2em;
+}
+h6 {
+	font-size: 1em;
+}
+
+main > section {
+	display: none;
+}
+
+main > section:first-child {
+	display: block;
+}
+
+input[type=text] {
+	border: 2px dashed #1F7A8C;
+    color: #1f7a8c;
+    padding: .75em;
+    font-size: 1.5em;
+    margin-left: 25%;
+	margin-right:25%;
+	width: 50%;
+	min-height: 100px;
+}
+
+input[type="submit"] {
+    background: transparent;
+    border: 2px solid #1F7A8C;
+    padding: 1em;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    margin: 1em auto;
+    display: block;
+    min-width: 10em;
+}
+
+input[type="submit"]:hover {
+	background: #022b3a;
+	color: #FFF;
+}
