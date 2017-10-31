@@ -1,0 +1,26 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+}
+#top-left {
+    position: auto;
+    float: left;
+    margin: 0;
+    padding: 0;
+    border: 2px solid #000000;
+ }
+
+#top-right {
+    position: auto;
+    float:right;
+    margin: 0;
+    padding: 0;
+    width: 10px;
+    min-height: 10px;
+
+ }
+   
+   
