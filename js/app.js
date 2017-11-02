@@ -31,5 +31,11 @@ $(document).ready(function() {
     $(section).show();
 
   });
+  $(".js-activator").hide();
+  $(".js-img").on("click", function() {
+    var self = $(this);
+    self.addClass("active");
+    $(".js-activator").show();
+  })
 
 });/* <- document ready function */
