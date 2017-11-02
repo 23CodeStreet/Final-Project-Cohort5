@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/***   General Text Styling   ***/
+
+body {
+	background: #FFF;
+	font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Karla', sans-serif;
+	color: #022b3a;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.8em;
+}
+h3 {
+	font-size: 1.6em;
+}
+h4 {
+	font-size: 1.4em;
+}
+h5 {
+	font-size: 1.2em;
+}
+h6 {
+	font-size: 1em;
+}
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+/*  max-width: 1500px;*/
+/*  margin: 0 auto;*/
+}
+/***    Header    ***/
+header {
+  background-color: aqua;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: auto;
+  border-bottom: 10px solid black;
+}
+header > h1 {
+  position: absolute;
+  left: 1em;
+  top: 50%;
+  margin-top: -0.5em;
+}
+.dropbtn {
+  float: right;
+  background-color: white;
+  padding: 7px 4px;
+  border: 4px solid black;
+  border-radius: 50%;
+  margin: 8px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.menu-icon {
+  width: 35px;
+  height: 5px;
+  background-color: #000;
+  border-radius: 5px;
+  margin: 7px;
+  transition: 0.7s;
+}
+/* Rotate first bar */
+.change .icon1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 8px);
+  -moz-transform: rotate(-45deg) translate(-9px, 8px);
+  -ms-transform: rotate(-45deg) translate(-9px, 8px);
+  -o-transform: rotate(-45deg) translate(-9px, 8px);
+  transform: rotate(-45deg) translate(-9px, 8px);
+}
+/* Fade out the second bar */
+.change .icon2 {
+  opacity: 0;
+}
+/* Rotate last bar */
+.change .icon3 {
+  -webkit-transform: rotate(45deg) translate(-9px, -8px);
+  -moz-transform: rotate(45deg) translate(-9px, -8px);
+  -ms-transform: rotate(45deg) translate(-9px, -8px);
+  -o-transform: rotate(45deg) translate(-9px, -8px);
+  transform: rotate(45deg) translate(-9px, -8px);
+}
+
+/***   Navigation   ***/
+nav {
+  display: none;
+  position: absolute;
+  top: 92px;
+  right: 1px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 0px 16px 8px rgba(0,0,0,0.1);
+}
+/* Links inside the dropdown */
+nav a {
+  color: black;
+  padding: 0.75em 3em 0.75em 1em;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+nav a:hover {
+  background-color: #f1f1f1
+}
+/***    Main    ***/
+main {
+  background-color: chartreuse;
+  padding-bottom: 3em;
+}
+/***    Footer    ***/
+footer {
+  background-color: crimson;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1em;
+}
+footer > p {
+  text-align: center;
+}
+/*
+mobile first
+break points:
+767 and 1024
+*/
