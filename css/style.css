@@ -191,7 +191,7 @@ section > button:hover, .start-again-button:hover, input[type="submit"]:hover {
   overflow: visible;
   margin: auto;
   background-color: blue;
-  background-image: url("../assets/peru.jpg");
+  background-image: url("../assets/Peru.jpg");
   background-size: cover;
 }
 
