@@ -144,7 +144,7 @@ section h2, section h4 {
   padding: 1em;
 }
 div.box{
-  width: fit-content;
+  width: 30%;
   display: inline-block;
 }
 input[type=text] {
