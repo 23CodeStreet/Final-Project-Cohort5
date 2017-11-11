@@ -1,12 +1,5 @@
-//  function burgerMenu(x) {
-//    x.classList.toggle("change");
-//    $("nav").slideToggle(1000);
-//  }
-
 // Wait till document is finished loading.
 $(document).ready(function() {
-  
-
 
   // Animated dropdown menu
   $(".dropbtn").on("click", function(){
@@ -31,11 +24,17 @@ $(document).ready(function() {
     $(section).show();
 
   });
-  $(".js-activator").hide();
+  
   $(".js-img").on("click", function() {
     var self = $(this);
     self.addClass("active");
-    $(".js-activator").show();
-  })
+  });
+  
+  $(".refresh").on("click", function() {
+    location.reload();
+  });
 
+  function myFunction() {
+    location.reload();
+  }
 });/* <- document ready function */
